@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Renewable Energy</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="./style.css">
+
+  <script src="https://kit.fontawesome.com/bfee79790a.js" crossorigin="anonymous"></script>
+
+
+  <style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    width: 100%;
+    position: sticky !important;
+    left: 0;
+    top: 0;
+    box-shadow: 0px 8px 10px rgba(50, 172, 13, 0.6);
+    z-index: 10;
+    background-color: yellow;
+}
+
+.navbar-brand img {
+    width: 40px;
+    height: 40px;
+    border-radius: 20%;
+}
+
+.nav-link {
+    color: rgb(16, 168, 16) !important;
+    border-bottom: 1px solid transparent;
+}
+
+.nav-link:hover {
+    border-bottom: 1px solid black;
+}
+
+section {
+    width: 100%;
+    min-height: 100vh;
+}
+
+/*HOME SECTION */
+#Home {
+    width: 100%;
+    height: 100vh;
+    background-image: url(https://www.nsenergybusiness.com/wp-content/uploads/sites/3/2021/02/shutterstock_114221578.jpg);
+    height: 1000px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: black;
+
+}
+
+#Home p {
+    position: absolute;
+    top: 30%;
+    font-size: 30px;
+    text-align: center;
+    opacity: 0;
+    animation: text 3s ease-in-out;
+}
+
+#Home p:nth-child(1) {
+    animation-delay: 0s;
+}
+
+#Home p:nth-child(2) {
+    animation-delay: 3s;
+}
+
+@keyframes text {
+    50% {
+        opacity: 1;
+    }
+}
+
+
+#Home span {
+    color: yellow;
+}
+
+@media screen and(max-width:576) {
+    #Home p {
+        font-size: 20px;
+    }
+
+}
+
+/* ABOUT */
+
+#About {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(rgb(183, 245, 68), rgb(45, 231, 245));
+}
+
+.circle {
+    width: 250px;
+    height: 250px;
+    background-color: greenyellow;
+    border-radius: 60%;
+    position: relative;
+    box-shadow: 0px 15px 30px rgba(243, 247, 7, 0.5);
+    margin-bottom: 3%;
+    margin-top: 8%;
+    transition: 1s;
+
+}
+
+.circle img {
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    top: 10%;
+    left: 10%;
+    border-radius: 100px;
+    filter: drop-shadow(0px 40px 60px rgba(244, 248, 8, 0.4));
+    transition: 1s;
+
+
+}
+
+.circle:hover {
+    width: 850px;
+    height: 500px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.circle:hover img {
+    position: absolute;
+    transition: 1s;
+    top: 30%;
+    left: 15%;
+
+}
+
+.circle:hover .content {
+    position: absolute;
+    top: 10%;
+    right: 0%;
+    color: rgb(107, 10, 218);
+    width: 55%;
+    opacity: 1;
+    transition: 2s;
+}
+
+.circle .content {
+    opacity: 0;
+}
+
+@media screen and (max-width:576px) {
+    .circle {
+        width: 190px;
+        height: 190px;
+        background-color: rgb(22, 253, 60);
+        border-radius: 60%;
+        position: relative;
+        box-shadow: 0px 15px 30px rgba(243, 247, 7, 0.5);
+        margin-bottom: 3%;
+        margin-top: 8%;
+        transition: 1s;
+    }
+
+    .circle:hover img {
+        position: absolute;
+        transition: 1s;
+        top: 25%;
+        left: 5%;
+
+    }
+
+    .circle:hover {
+        width: 410px;
+        height: 450px;
+        border-radius: 10px;
+        transition: 1s;
+    }
+}
+
+/* Product Section */
+
+#Products {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3%;
+    background: linear-gradient(75deg, rgb(157, 237, 240), lightgreen);
+}
+
+.carousel {
+    width: 80%;
+    height: 80VH;
+    box-shadow: 0px 12px 15px rgba(0, 0, 0, 0.5)
+}
+
+iframe {
+    width: 100%;
+    height: 80vh;
+}
+
+@media screen and (max-width:576px) {
+    .carousel {
+        width: 80%;
+        height: 80VH;
+        box-shadow: 0px 12px 15px rgba(0, 0, 0, 0.5);
+    }
+
+    iframe {
+        width: 100%;
+        height: 80vh;
+    }
+}
+
+/* PRICE */
+
+#Pricing 
+{
+
+    background: linear-gradient( rgb(245, 206, 180), rgb(191, 247, 191));
+    padding: 5%;
+}
+.card
+{
+    margin: 10%;
+}
+.card:hover{
+    box-shadow: 18px 8px 8px rgba(247, 7, 7, 0.4);
+    transition: .2s;
+}
+
+
+/* CONTACT */
+
+#contact
+{
+    padding: 3%;
+    background-color: rgb(186, 243, 243);
+}
+
+#contact iframe
+{
+    box-shadow: 15PX 15PX 15PX rgba(0, 0, 0, 0.5);
+    
+}
+.col
+{
+    padding-right: 2%;
+}
+
+
+/*--------------enquiry-----*/
+
+
+
+  #enquire
+  {
+    background-color:whitesmoke;
+  }
+  #enquire .col2{
+    margin-top: 30%;
+    font-size: 30px;
+  }
+  #enquire .col2 p{
+    color:darkgreen;
+    background-color: lightgoldenrodyellow;
+  }
+  #enquire .col2 p:hover
+  {
+    box-shadow: 15px 15px 15px rgba(0,0,0,0.5);
+    transition: 1s;
+  }
+ 
+
+
+
+
+
+  #enquire .col1{
+    margin-top: 10%;
+    padding-right: 5%;
+
+  }
+
+  #enquire .col1 h3{
+   color: orangered;
+   text-align: center;
+
+  }
+
+  .card-body p
+  {
+font-size: 25px;
+font-style: oblique;
+  }
+
+
+  #enquire .card:hover{
+    margin: 1%;
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.5);
+    transition: 3s;
+  }
+
+
+  /*---- END NAV BAR -----*/
+
+
+  
+  </style>
+</head>
+
+<body>
+  <!----------------------------------------------------NAVBAR SECTION------------------------------------------------->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWK5NrO6w2aIydyZnnKJGe8ppb73y0nDQkqg&usqp=CAU" alt="" width="50px" height="50px"
+          alt=""> SUNPOWER ENERGY PRIVATE LIMITED</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#Home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#About">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Products">Our Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Pricing">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact Us</a>
+          </li>
+          
+          </li>
+
+      </div>
+    </div>
+  </nav>
+
+  <!-----------------------------------------------------HOME SECTION ------------------------------------------------------>
+
+  <section id="Home">
+
+    <p class="text-center"> Installing a solar energy system is a cost effective,suatainable,and simple way to reduce
+      your environmental footprint and your energy budget.Nexsun Energy private limited cares about the natural
+      environment as much as you do.<span>Solar energy is non-polluting and renewable & free !Over 25 years & more, your
+        new system will offset your carbon footprint by few tons of CO2,equal to planting few acres of trees.</span></p>
+
+    <p class="text-center"> We have lowered the cost of EPC through value engineering, procurement,construction through
+      operational performance monitoring and efficient financial strategy. This allows us to deliver cost-effective
+      Solar projects for our clients. <span>Our in-house EPC expertise lowers system costs and our advanced in-house
+        operations and maintenance capability allows us to increase power yields and monitor project performance in
+        real-time.</span></p>
+  </section>
+
+  <!-----------------------------------------------------------ABOUT---------------------------------------------->
+  <section id="About">
+    <div class="circle">
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSekKnctEVLyhnQUMGN9WlBBvRWhXjTaqiwpdKr0grj9jqoUn_qF-Orqr-d9HIFuVR0jvk&usqp=CAU"
+        alt="">
+      <div class="content">
+        <h1>ABOUT ME</h1>
+        <h3>Our expertise in solar and renewable energy has made us pioneering leaders in the field</h3> <br>
+        <P>SUNPOWER ENERGY PRIVATE LIMITED was established in March 2023 in the well-equipped Industrial Estate in Coimbatore which is Manchester of South India.We started to focus completely on solar Energy and its applications…</P>
+      <div>
+        <ol>
+          <li>
+            Solar Roof Top
+          </li>
+          <li>
+            Solar Ground Mounted
+          </li>
+          <li>
+            Solar Street Light
+          </li>
+          <li>
+            Solar Water Pump
+          </li><li>
+            Solar Homelight
+          </li>
+          <li>
+            Solar Water Heater
+          </li>
+        </ol>
+
+      </div>
+      </div>
+
+    </div>
+  </section>
+
+
+
+  <!--------------------------Our Product --------------------->
+    <section id="Products">
+<div class = "row">
+  <h1 class="text-center">Our Products</h1>
+  <div class="col-md-4">
+    <div class="card shadow">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWsiTOboBeXWrAwFuBrIQcpV81NLMuvHpAbA&usqp=CAU"class="card-img-top"alt="">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvd_ZLnPrGX219DkCTSHYZpIkURcedP6zMa2CVU6DVgwsMHYNnln2t5v-fxXV0LWM9buY&usqp=CAU" alt="">
+      <img src="" alt="">
+    <div class="card-body">
+      <h5 class="card-title">Solar Rooftop Power Plant</h5>
+      <div class="card-text">A rooftop solar power system, or rooftop PV system, is a photovoltaic system that has its electricity-generating solar panels mounted on the rooftop of a residential or commercial building or structure,Rooftop mounted systems are small compared to utility-scale solar ground-mounted photovoltaic power stations with capacities in the megawatt range.</div>
+    </div>
+    <a href="" type="button" class=" btn btn-success">Learn More</a>
+  </div>
+</div>
+
+
+<div class="col-md-4">
+  <div class="card shadow">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToPQmJH4wZFHiCtW_QP32msloOsgrfOwwOJQ&usqp=CAU "alt="">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROJy8MqKjjgejtyvB8ZIGcDl0XX5Wu_kywhJiaA_mLA-zM1Xahom50Gf5UQteVMwqtQ2M&usqp=CAU" alt="">
+  <div class="card-body">
+    <h5 class="card-title">Solar MW Power Plant</h5>
+    <div class="card-text">A 1MW solar power plant of 1-megawatt capacity can run a commercial establishment independently. This size of solar utility farm takes up 4 to 5 acres of space and gives about 4,000 kWh of low-cost electricity every day</div>
+  </div>
+  <a href="" type="button" class=" btn btn-success">Learn More</a>
+</div>
+</div>
+
+
+
+
+<div class="col-md-4">
+  <div class="card shadow">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSH50w290SIMOaroZfXe8HrIkS7zAB-VP2KeA&usqp=CAU"class="card-img-top"alt="">
+  <div class="card-body">
+    <h5 class="card-title">Solar Street Light</h5>
+    <div class="card-text">Solar street lights are raised light sources which are powered by solar panels generally mounted on the lighting structure or integrated into the pole itself. The solar panels charge a rechargeable battery, which powers a fluorescent or LED lamp during the night.</div>
+  </div>
+  <a href="" type="button" class=" btn btn-success">Learn More</a>
+</div>
+</div>
+
+
+
+<div class="col-md-4">
+  <div class="card shadow">
+    <img src="data:image/jpeg;base64,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"class="card-img-top"alt="">
+  <div class="card-body">
+    <h5 class="card-title">Solar Water Pump</h5>
+    <div class="card-text">solar-powered water pumps work by converting the sun's rays (photons) to electricity that will operate the water pump. It uses solar panels to collect the photons (units of light) from sunlight, producing the direct current (DC) that provides the energy for the motor to pump water out from its source.</div>
+  </div>
+  <a href="" type="button" class=" btn btn-success">Learn More</a>
+</div>
+</div>
+
+
+
+<div class="col-md-4">
+  <div class="card shadow">
+    <img src="data:image/jpeg;base64,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"class="card-img-top"alt="">
+  <div class="card-body">
+    <h5 class="card-title">Solar Homelight</h5>
+    <div class="card-text">A solar home lighting system (SHLS) is a great way to harness the sun's energy to light up your home and run small home appliances. Home lighting system is a compact, portable and easily mountable, economical solution to all your small energy needs</div>
+  </div>
+  <a href="" type="button" class=" btn btn-success">Learn More</a>
+</div>
+</div>
+
+
+
+<div class="col-md-4">
+  <div class="card shadow">
+    <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoGBxQUExYRExIYGBYWGhoWFhkaGxsYGBoWGRkZHSEgGhwaHysiGh8oHRwaJDQkKSwuMT4yGSE3PDcwOy00MS4BCwsLDw4PHBERHDAoISgwMDAwMDAwMDAuMDMwMDAwMDYwMDAwMDAwOy4wMDAuMjAwMDAwOTAwMDAwMDAwMzAwMP/AABEIANgA6QMBIgACEQEDEQH/xAAcAAEAAQUBAQAAAAAAAAAAAAAAAwIEBQYHAQj/xABJEAACAQMBBQQGBggEBQMFAQABAgMABBEhBRIxQVEGEyJhIzJCUnGBFFNicpGhBxUkM4KSotFDscHwCBZjc+I0wtJEk7Kz4SX/xAAYAQEBAQEBAAAAAAAAAAAAAAAAAQIDBP/EACsRAQABAgQGAgIBBQAAAAAAAAABAhEhMXHwAxJBUWGBweGhsZETIkLR8f/aAAwDAQACEQMRAD8A61tK+jhjeaVgsaKWdjwCj/P4VyHaP6cpGkIgt1SLOjOcyEdceqD5a/Gsp/xDbZKW8Nopx3zmR/NI8YB/jZT/AAVxQkboOfFk5Hl1zVgd32Z2/uH3d4RkP6p3CGz0YBsfMf2zlB2uuPdj/lb/AOVaZ+hDbKMGtJ1VgTmMsAcZ00J4chp5dK6dZbIgIIaIbyMVPHXmDx5qQa1NoRhv+brj3I/wb/5V6O1831cf9X962H9RW/1K/n/en6jt/qV/P+9S8DADthN9Un9X96qHbCX6lPxNZ39R2/1K/n/evRsWD6laYDB/84SfUr/Mf7V6O2D/AFA/mP8Aas5+p7f6lPwp+qYPqU/CmAwv/ODfUD+f/wAaDtifqP6//Gs0dk2/1SfhXn6qt/qk/CmAxA7Yf9D+v/xqodsB9Qf5h/ast+q7f6pPwrz9WW/1afhTAYwdr1+pb+Yf2r0drk+qf8RWSOzrb6qP8BXn0G2+rj/AUwGP/wCbY/qn/L+9P+bovq5P6f71fGztvq4/wFUm3tfq4/wFMDFbQ9q4ScFHXPMgEfPBzWaikDAMpyDzrGGK09yP8BVxbSxKwCFQG0AB5j/+f5VJsq9pXteVApSlApSlApSlApSlBw3/AIi3Ju7deQhJHzkbP+QrlwrrH/EdbkT2svJo5E+asD/7q5Q1aRsXYe+MVwhBwN5c/A6Z+RI/Guzt20dJGzGucAc9d0nX8GrgeyH3XB8s/hg/6Vv0m1N+TeOhPhI5aDiPju5+damYsdW+SdupOSL+dQt24m6L+daeLgV41xXO7TbW7az/AGfwqNu2U/vD8K1X6RVP0il0bS3a+498fhVB7V3H1n5VrPf1Sbilxsrdp7j601Q3aSc/4prXfpJqn6QalxsDdoJvrWqM7bmP+K341gzcGnfGl1szR2vKf8RvxNUNtKT32/E1h+9Ned8aXLMqb9veP4mqTdt7x/GsZ3nnTf8AOlyzIm6PWql2kY8Pvaqcj4jh+eKxmavdh2JnuIoAM77jPkg1Y/IZpcs7cDkZpSlVClKUClKUClKUClKUHOP0/wCzO8sUnA1gkBJ6K4wf6gg+dcEFfWfaHZS3NvLbPoJUKZ90ngw8w2D8q+WNr2DwSvBKuJI2KMPtD/MdDzGDzqirZ7ZYD5fjpW1PMAVzxz+HhNaxseHeYZGmR+A1P+/jU20Lw77vnOTp5f7xTqjaBdL7wr03ie9WlNfN8v8AfSvJZpFALAgNqDjGR5GnKt25ttCP3qiO1Yh7Varc20ysscmVLbpBbhhuBz0q4XYc3fC3k8BJKqzZKMwGcK3A50/EVr+mnMzp23EOv4YNRN2hj6fnWNtezMrF4nBScIJI0YaSJkgkH5flVcXZpniLR576Jis0Z08wU+I/zqxwrnMun7SLyAqM9pvIVK2wolMd0q79tJhWUk78ZYEHXnunGvnUsfZuMO1q+u+O8t5dATpjB6jONPOtf0medYHtK3L56cKpO3JTjAPiOF00Y9BWZitCFFyIwJrf0dzFjSSPGC27z0xnyxU/6qiB7g/+muPHA/ExTAcAfz8xmtRwU52AbaFwRIdxsRYEnVCTjUccZqsLdM24F8Xd96BnO+mM5T3j5eR51sgUjMxQd/bjurpMZEsGg3se1gYPmp68PY7IDchjbhmexkJ8xvRM3x8J+KNW44UJztdtrO4k7rDr6ZS0TZO67j/DJ9l/jVdtsuZhGTNuiTeQFhgJcLn0cudV4HxfHoa2JFjYZPginfxaa290M649lWIbTr3i9KlYZ7xpkI1EV4g1KuN0JOn9B3vNCdGatRw6U55YO22FKd0id0LZjBbC93cqdY5OgYA7reRzwrq36KrGERtMCxn/AHcgkxvx7vFNPtcT8K0vhviUBiqqLjd0Etvp3c8fRkwDnkFGT4GrJbK2lJbTd9neZFX6RjOJrY6JOo6qNG+HHwsazXw6ZjAiubut0qK0uFkRZEIKsAQRwINS15HYpSlApSlApSlApSlArn36XOxkM0T7QGVmhTekI4SRrx3vNRkg+WOmOg1iu2Nv3ljdR+9BKPmY2oPnGWVACkZxvcXOcD8AT8dOVbH2U2Psq4lW2nuLjvZTuxkIsUcjEkeE5dgcjHi3c6aViOznZC4ureee1O89u6houDOjAnKHmwIPh58jnQxbJtRMVh3u7lBO5xV45VOgOQCMkDB6gCtRA2pOzcNvO9hcxd4kTmSPOhkhfmpGoO709pKq2LsyOCaTZ90okhAPdsQCWtpRkOhxow45GoKkVfbb26bqGGeQxpc257sqM967abwK8ArEZHmRVltmZ5EgnjDOYwe7CqDhNXdWPHGAcZ0zjgDXopxjHSXOcJsl2Vs4L32zLs5CgR74HrRN4opU67uhH8S9aotrFpoZdn3BC3EDAK54LKn7uQH3WXAJ91geVU38skgjvYgZFhiy5zkrCCN4AcSBvF9M6K3DNVXsDr//AKEbBo0C94Pa7piQSdNVRt3noHbThWrd99pZv2UyTd/bLMBu3FsxIHMnOJIj97iOW8PtVHdzKrR38XqOAk44DdPAnzB/I+VTTWiwbt0hLwTERTqfYLDEZ+6QCnkVTrVRSKCcwgH6POoIDDISUg5AzowOC4/izwq79srZokjlaFsfR7rLLzCuRrpyzqcfe6ioksmYNZOSJofHbyEetjOMHmDqp+fUVNDanEmz5CcjDwN1HFdT7QOnxCn2qpw88WRpdWvLgWUY015EYIz1XoapdQt2Sq3qr44/BcoeaDTJA47pzk9CfKqzbICbcnFvcektn+qkGuPLdP5eS1412AUvox6OTEdymMDeOBkjkCNPw92q1tVBNmW9FL6W1k9xuQ+RwpHTHQ1UUrNIPTbuLm28E6Yz3kI59W3Qc+asRx4em2TSFWxDOe9tZDqIphxQnprjzRui1730hH0gLi5tfBcJxLxDnj2t3PzV/PSoQR/ud7FtdeO3fP7mcez5YP4ofs1oed6DvzSIcE9xfRcCrghVlHQ5C+L3gjcDUyh1ONHmgTXTK3NmwPLmQu94eOO8XioNRiZwWmeMd9AO5vIjwlg9XeI54BAJ90q3EVLFAylIo3JdfTWMh4uhPihYnTeyN3X21U8HrAqhjPo1hbeYAy2Tk5MkftwOToW5DPEka4kqW2ORH3OgJZrXe4LJ/iW0meTZ8OccVzxeoh3bKCp7uCdso2o+i3gHAjiqHXTjulhoUFezODvtKpQMwju1HrQ3IOEmQdGOc40JJHCQGorZuw+3lidYCSLeYnud7OYph68LZ4YOozyI55x0KuM3Dev33HKrdbuuG/wrmLqNRnHHe1HjON/7DdoGmU285H0iHAYjhInsyKeYYYPzrjxOH/lDpRV0bPSlK4OhSlKBSlKBSlKBUO0I96KReqMPxUipqEcqDkf/AA9viS+TyhbHzmH+orP/AKSOxVvIrbQQiGeMZdgPDKNBhwPb4AMNc4zkYxrv6DhuX97F9hf6JCP/AHVtfa5jeXcWzEPo19Ncke4OC6eRHzdTyqjBdkNpxiWOSREKTkJJkAhJxwcZGgbQ/M9KpvrVtn3xjXSKQma3z6oyfEh8gSRjowrI9vtjLFKJ1G7FPiOTGgSRR4H8uGPketa/t3tEZYltrrSRTm3m4YmTQxSdA44P568N6u1NWN/5c6qeiqMCzuwiD0E+ZrcHgATh4m+BJUjoRVWzwLS4Nvjet5FLwBuDQvlWjbzUkof4TVVuv061MI/foe9gzoRMg1Q9A6gqR1FWM16LiyzgiaF1aHQlhIzBGRscFcHB6FAa666TowkS3MDzbOLb0cqEwMwyHhf1QejKRg41BUHnSwg31l2bcNh0wY5Ph4o5V+WvwLivBZrd25nhB+lR4ddSC24DvR4OgLLr13owDypdy/SLeO9iPprcZbHFofWYY6qfSAf9wVrX38SLW4R5YTld26tWIYZx6uhHw4a9Cp5V5cXZIj2jFxXwTr1HUj+bI++OmLvad2o7naMZGoEc68mUA4bz3Vyp+wVOuKgcrbz95jNtc8Rxwx46e9kH+JD71N+/tEMypDLnGbW6BBHHdY5znlkH8SD79ILQnf2fI3jX0lrJxzpp8QRoev8AFU0FkqM+zpTmKUb1u/Q6bu63LXdAP/bPI1bpA8sZgbS6tTvRnVd9BqQPlqOn8FLicXbEC9Uemg9HdIfajGRvHrjUE9DnmKfRo0PcFsWt147d+cMw5dAVbTzXyWg2h6m0o1yDiK7j4cdN4jkDwPQg+5Uy2kasbJm/Z7gCW1l+rfOnwwcIw6Y6GrewoEkozMVxdWno7lMZEsA0zj2t0H5o3XhSIF8MCviGYmaykJ/dTDQxM3T2CfdKMOBNercSkd/jF3ZeCdMZ72BdMkcW3QfmjdTVEsMWO5Dbtrc+ktnOvcXC+yfJScHqjdBUsmSs3IYPLKpCSEQ30fBop84WZRybfGdNN8Hk9evI6Ft8CSWBNyZfZubNho69d1cHru9THUMl03jmkT0kQ7i/iP8AiRaJvnrgboLdO7flXkauCkUblpoh3tnJzmgOS0Tci3HT3gw0DVqwlUkFVQ94yoWtyf8A6i1bO/C45uvi067w03lxVY3DxvFJAxLoDJasTkyw5y8D9WUk4+P2xi2QIwQRtuRSt3lq2o7i6UAtETyRhj5bp4oTUhcMCW9EHkxJyNtejOH04I+Dn+IZ0WtWHYOz22I7qBJ4zow1HNW5g/CsjXJey+3zazGVxuxyOI7uP6qc8JQPcfjnhnPIrXWI3BAIOQdQeoNeHi0ck+Haiq8KqUpXNspSlApSlApSlBxTsXtBbTa9/I/qpFPp1YTRboHmTp866F+jzZjrE93N++u271s8RHruL5aEtj7WOVaHbbBSbbc0bkYeWQkdY08bD+LIHwrsoFUWm19nJPC8L+q4x8DyI8wcH5Vy1LdFdobuMOgP0e5U9PYlU8QRxDDXTzrrtaT+kTZe6VvFXK47m4A5xtwb4g4/p6VaJtOKS1ra2yW2bcRsJGeGb1X9rfXB1xoXxhsjQlWOmcVZXby2919LKBIriRh6M5USAK2cewWB3gDzXTjWThsri/VbHvkWOCN2GRlnfTuWU9BnjyGmudMG8ss1s8BB34mAljxkkK2MqOPeI2qnjggcCa9NFWGPT9OVUY6snft9GuUuo9Ibkktu8EuBhmx0DjEq/wAVU3Z+iXazJgW9yS2mqpMNXXHTUSAc1Zqj7NyrcwSWM7bpxje9x1IKSDPuMQfuSHpUuyENxBNs+48E0Z3df8OWM+FvgGOPNJAeVa+PzH0m/a2mslgna2OlvcgvATqEbOq56Ixx5o45VVHs7daTZkxJDDftn5kH1cE8G03fvIOtWzu89q0DjdmtXyykajdyhOuvhzg9UK9KvVze2gZQfpVqcge2QNGTPU7p/jQH2qT532kWMUbTwPbvpc22WQ+8q6kdcYJOPdY+7XlzcNLGm0Isie3IWccSQM6kDidDnzDD2qmv5y6RbUgOHjwJwOo13iOhGWx/3Fqq6uFglS9iXNvceCVB7JOAV/HGD1EZ5mmO+4iknSGRbpFza3QKTINQjnG8PxwR8vfr1LHVtmuw19NZynUZI0GeYYYU/wAPvVSLdIJXs5Dm1uhvRPwCk+qw93GcfA/Yq3SJ5Eeyk0urUlrdjoWXUlPgRkjHDxDkKqJ2vXZVvUGLq19HdIf8SIHG83vY1U9Qc8xUbrED3Gd21uvHA3EwTryP3ScY5oegql9ok7u0ox41IivE5H2d9h5gFW6EeQqmS1jRjbFsWt16S2k+qlHD4bp8JHu/A1qIQ+kSDMzKBcWg7q5jOoltxoSfeCqcHqjA8RXi248MMb4V/T2EhOquCA0TNy1wp8+7brXvfy47/dxdWfguE495ANM/a3QfmjV4YI8CBW3ba5Pe2znXubgaFCegzunqjA8s1RU0yMGkcFYbhu7uVA8UF0CcSAcstk/e3113qrdyC7SqGeNRFdoDpLBgbkynqBune6bh5EVF9K1aaRDn/wBPfxczwUSjzyAC3UI3AmqlDqwVTvzQLvQtyuLRt4lSOZA3sDr3i8xVVI2Vzn0hSPDchcWR4N99APiNw8dwVuv6ONv7pFhK+8N3ftZD/iRe6ftLggjqD5Vo9v8A4YhbRsy2bkjwtpvwMeGDoBnQ+A65aqUkGF7s92Cxe3JyvcXI9aJs6qjY06ADTwGs10c0WkibS7xStf7FdpBeQbzDdmj8EyHQq404dCQfmCK2CvBMTE2l3iblKUqKUpSgUpSg5NEO77UeTlv6rcn+1dZrk3aLwdpbZveMf9Ue5XWaBWj9tNqy3M67Isz42w11JxWGHIJB6senmBzJGS7ddpWtkWGBd+6uDuQINSCdC7fZH+9Aan7F9mVs4N0tvzynvJ5DqXkOp1Ou6MkD5niaDSSZLG5xqXtz/wDctnP54z8s+VS9vLQQzRbTh8UM+BJjgWI0J6b66HzArZf0h7ILxLdRrmSDJYe/CfXU9dMn+brWI7LvHcwybNlOY5E7yBjx3TyH2lb/AFrtROVXbNiqOjB9qF3TFtOHX1I7j7QYejkb7wyjefwqHtHeoktvfRHxOoWQHhIg8KsTw3gMxPz9U8AcXPZeQo0+zbkZ3d+N196M+tj5YlX4N1qz2ds5RLJsq6JO42/C44kFdCvUPHy5spHOu1+3T9OeaftJKsUsG0YSD3gCyqfbUDAY+e7mN/Nc1Tte6S2uIr2I5juV9KvAtwXe6AtoDrpImedQpYMDNsuYguh7y3fk4K5GPsypoftKwqnZFoGLbLut4aiSIggth1zhTwO8n9SHGMg03rAuriJLOdXXLWl0oVueGwCT8T+8HnvirK3txBNJs6bHcT6xN7IJHhIPTULnoynlU+ziWhuNlXOskYLRMuMkgb6tHnQ50dfJnFY+Im6tjC2lxbeKM+8g5dcAH47reVaiN+O/ol7DA0scmzptJoSXt2PHIySPnqfjvjnVtJO88SzrkXNrgSD2njBGvmy4A/Dqalnna4gW6TIubYgSD2mUHQ/EEY+KjrXt5dbrRbUgA3Xwlwg4BiMHPRWB/Aj3au/tHrXao63yKDb3Po7mMcA5wD8mGCPPd869jsh4tmyPlJMS2cp1AJHh189FYfDPE1RuRwSmM62d4uVz7BOfwKnPy3hyFUpauyvYSH08BMls5PrjU7uRyYZ+eccqsAt3IQLkDFza+juEOpkhXTJ97dBweqtnpRoYh6DOLa69Jbvx7mZeX8J0xzRvKvZL8uF2jGPSxYjukPtLqu+w/FW+Z5Cqe4jH7PvYtrn0ls/HupRy/hPhI5qR0NUe9+43pnQd9bjubuM8JIPV3j1wCAT7rK3KiREFYUfxL6axlPEqT4omJ4HICnowU+1VH0qQemIxc23o7hDr3kI0yfe3QfmjZ5VE6LpCrYjcmW1c/wCFINCjEcuCn7JRuIqiV5UdSfVinbxDH7i6GfFjiFbxHH315AVTLLnfMg10S5VTnDDG7MmdCcldeByp4Oaie4Db0rqcP6O6TgQ4OA46HeABI4Mqn2jVJLD1sM8a4OnhltyDrjicDOnTfXUqKDJ7E2zJazi4XVo8LOo4Sw6AOOumNeWhON1q7Xs69SeJJo23kcBlP++dcDXIKhDvEAtDnXfjz4o26sM/M9N+tr/Rt2mFvILd2/Z5zmJichJDyJ6agZ81PWuHG4d4vDVFVnWqUpXkdilKUClKUHI/0kN3e3bGTqYP/wBxFdI7Tbeis7d7iU6Loqj1nc8FXzP+WTXNv02tuXtpMACQgK596OQsPPn+dZHstfLte9+kTugW2AMFtvZ8ZAJkYEDeAOP6eGNbYZ3sPsKUu207wZupx4VPCGHkijkcYz/fOdvpSoBFcr2xs17K67uLQAme1PLA9eL5ch8OtdUrA9tNiG5g9HpNEe9hbnvry+DDT44PKtUzaUmLtP7dxd5HBtm20K7omxyGdCfutkHyNWvaWH6RbRX1vpLbjeAXj3G8N5fNon1H2SOtX3Y7aUeWglX9nuwRungk/B0PTPL5VjdhO9heSWEmq72Ys8GDAhfk6ZQ+YU8q9FF8ozjGNHOVe2P2yzjvof39sCxC8TGCDIoxzQ4kTyOBzq322fpVql9B++gBcheJUeJwuOh9KvkWHKvLKQ7Ov+6U/s8+JYCeAUk4B6bpJQ/Zaqig2fehU8Ntc+khz6sZ3sMhH/Tc7pHuPjXFajxrH+k3K22tL9It49pQ6TW4zJu84x4mx9wnvB9lnHKqdsS5EW1oMArhZwOAxpk+Qzg/ZYc6lUfq+93B4ba5y0edQhzgq3XcYkHqjV5bRrZ3LWzD9luQTEGOigndKE/YY7hPusjVY8evmEWN7ILedLyIZt7jR06ZwGU+edPiEPWqVCW07Qsd61ulyDyAbJB+IOTj74qa2tBFJLsyYkxyeKBj1OQuvI+wfMLVpYwmVJLCXIliJaFueeOPnu5x1VhWoy3l9I8t7UgybMmPPet344b2SCeugPmAfaqNGeaLmLq04Aes0a4yo8xoQem7XpDXNvjGLm14DOC0Y4jPlpg9Cp5VTdXpYJtGI4kTC3A4ZHAOR04hh5sOlXf2q5a9Csm0IwDHNiO6T2d9gBnHIOMfAhehq3lgVC1oX9DL6W2kPsMNB/LncYdCPOjSpHJvAZtroFXTjuufWXyPtKfj1qIQEhrN3yykSW8h4HPqn4MPC3nVR490+k2N2e39HMvEtGumftFM/NGqkoo9GDuxS+OFuPdyL7PwXPDmjY5VGLlsC4GkkXgmU8SindyepT1W6qfKm4ozDnEUvjhbj3bry+KE/NGoqrviMysuq+iuEPAr6u8eumFJ90o3Ik+qrAiMMS6eO3bm6E+qeW9kY+8o5NUXfN+8IxJF6OdTqGQaZPvAA/NG8q8CcIgftwMTw5FGPlopPQo1BKrKQApCo53ozyjkAyV8lIzp7ueaCvXbOd4boZsOMZMcwz4hjkTn8WGfEtQtICC5BCud2Ue0kufWxwDbw/mB9+jNjJYaqN2UagNHgYcfAY14gAHilEs63+jLtSbiM207enhGOOd+PTDA8yNNeYKnnW6187WF/JBKk0Telh8Sn6yLXiOePFkffGvhrumxNvRT26XG8EDYBDHGHOm7rx14dQQedePi0cs3h1om8MrSlK5NlKUoORf8RK7v0R840mXp9Vz+Zrddr9jILiGIxeglhRRbyx+FkAHhBx6y+XmcYrYJ7SN2V3QMybwUkZIDDDY8iAM/AVcCg0vZPa6W3lFltRRHIdIrgaQzDrngrdRp5gZGd0FWe19lQ3ETQzRh0biDyPUHipHUa1poN1sjQ79zYDgeM0A8+qjrw+7zDfqVZ7J2rDcRiWGQOh5jkehHFT5Gryg5p212H3NwWXwxXR3lPAR3S6j4B/8AU9Kh7Swm/sUvFB+k2mVmX2ig9bTyxvDzBFdA7Q7JW5geFtN4eE+641Vh8D+Wa53sTajW0/eyjALdxeL0caK5HMMBnPUNXWiqemcMVR3QyR/rGxwuDPFmSLzkC5dPhKniHnvVTsdxtKxNsSO/TDRM2mJlBC73MB1Bjbz8zVFzbnZm0Citi3nxJCw1CqTkfHu3P8rVF2gj+h3iXkYxBck76r7EwOZFHTUd4p8s13zwjrjHiWFdgP1hZm2bw3ERHd72jLMnhAYct7BiYdQtW+z/ANvtDbNpcQnMe9oRKuUAboGGYm89w8qvO0q9zPHtOHWOchLgLoO+IGGHQSLgj7Sjmat+0q9zPFtOEZjnIScDh3pXRvISL/UKsfv8SmW+i2Gb21GAfpVtqoOjHGjIeeSFx5Og5mrPaEpnhjvos99FgSgesRybHU4/mXHOsnttu5mj2lDrHOQk4GmJSNG8u8A+UkZ61Z7RIgmW5jGbe5yGA4CQ6sp6Bx4h9oMKsTfeU/Zv0tdoXODHtGHAzgTAcA2PWx7pBJ+DHpUFw6wzCdB6CfIZeSufWQ/HiPPB516mIJmiPigmGV+6dSPiDkgfeHKooIgpezlPgYZRs+z7LA/Z0GehB41b7+BEsSozWrt6GUBon6D2WH2kOh8qqCtIpiI9Pbk7v2hxK/Bx4h5io0RpENu+BNExKH7fT7rj89Ko+kF0Wdc95CMOPaMYP5sh/Kospprn1btOeFnB4a6ByPP1G+VR90ozCWxG3jgY67hXkfNCd09VYGq2kCt3oAMU2VkX2Q7DUfdcajzFQGLGYC2mkkMh6agE/DVH/Gqiszt+9xuyQ+CRePhX/Pdz80PlVDIBhAcI3iiY6hGHs56DOPNGHMV535/egFXj8My891TjJHMpwPVT5V4UA9FnCP4om492w5fw5+aNUVX33Fyp19HOh5ezk45jRSfuHqa9Ebg4XLNGMqcZMkRzoQPn/EGHtCrzZex5pmDqmGVjFOGHhCgY3jnGQBlT1Ur0rP28UVsAseJZVyokwcgMR4Rr4jooyeO6MAVmriWWKbrTY2ykjVJ5gy4O9FHpvgEcCDqo4cdfCp5Vm9g7NkvpQiFUhiKkgHRB0A4lsD4deVZjs72JeUia8yAdRHnxt98+yPLj1xwrbrbYUEcvfxxBHKqp3cqCqggAqNDgHpyFeeuu7cRZkqUpXNopSlApSlAoRSlBpW1+yU1vIbzZbBHOsluf3Ug+yOCny0HQrzyPZTtjFdZhdTDcppJC+jZHu59Yfn/nWyVr/arsjDdgOSY51/dzJo6kcM+8Pz6EUGwVon6QtkrHILzdzFKBDcgcgdEk+IOB8lHM17Ydq7iykFttRfCdIrlRlGH2sc/Pj1HOtwniiuIipIeKVSMgghlYcQR/nVibTcc3Nm15aSbPfBurT0lu3vpjQA8wynHzXpVp2elW+tHspThiAqseKSrpG/kQR3bfw17KJrWQ41nsTx+ttCfz3Qfwb7NRdqI1t7mLaNsM292CxA0AkI8aHHDe4+TKa9NE3w75auVcWxUdkbtZI5dm3Y3R4oZAeKFT6y59pHw6noc8q82Gdwz7JveGsTHhodVdP6ZF+LCqO2Uee62rCeJWK4I97Ho5D94eFuWfhXu3v2m2S/j0ltgEnA4tb50fqTG39LGt+Z64T4numi12LJ3TzbMvBlTmJ8dDgrInxwsinqvxqOzjKmbZl0eYXfHJtGjlTyI3XHzHWpduD6TbLeoPT2yhJwOL2+dGGOJjP9J8qpv/ANptluU1ntV9IBxktick+ZjOWH2WcchSe86T8SaemLMDSI9rL4Z4WOMcnGvh6qwww+OOZq3LmeEY0mhJKjrj1kz05jyOayG0W72JbxP3kChZscWhB8LjHEoT/Kei1j759x1uk0DECTHJuTdMH/U9Kuvv4lNEVzL3iLcJnfjADj2jHny9pDXk8+6y3KEYcgSdA5GjfdcaGqpX7qQSoMRynUclk5g+TDT5jnmoVVY3MRGYZQd0fZPFfip1Hw6U03KwkQKjGMj0MoO6Oa66r95Dgr5Yqnu2YGBiO9jOY25NkcvsyLgfGo4Yid61c+IEGN/P2G+Y8Jq/2Xs2W5RXRcyRMY3AI3t3IznOB4T4hk+XOnNELZZwyZKTDTOElDcMZ3AxHkfA3ljzrZdk9llRGW40QOskLAgnAwd0A8cHK7zDBU+ZAvILKC2LPvd67eIhgpjV8YLKMalhgnOmay2wuzdxenvZGaOA+37bj7APL7R06ZrhXxGopWimW5fubaPjgtjQY4b0j/Ac+mAK3jsx2PitsO2JJveI0XyQHh97j8OFZfZWzIoIxFEgVR8yT1YnVj5mryuMzdspSlQKUpQKUpQKUpQKUpQKUpQWu0tnxTI0U0aujcVbh8R0PmNa0a52RebKYy2Zae1yWeFtWQcyMf8A5DXqDjNdDpQc523taK8iTaFqR39uMyxNjeaA+sGHtKMnUaYZudY3Y8MUgk2W7eguV7+zc8Y5OIXyIYYI6qetbP2r7BrM30i1bubgHe08KOftY9UnXJHHJyDXPpLWZM2sitFPE3ew50IcYzukaEHAII0yK6UT0ZmE3Zi8Eby2N2vgfegmT3TnBx8Dhh8scag2JcPs+7e3l8W4dxs+rJE48LeYZDr55NXXavFxDFtaIAMcQ3ajTcmXRX8geHwK9Ki20v0u0W4UZuLMYcDjJbZGfiUOD8K9F4n+6euEuURbD+HmP1bd7i+K3dd+HOokt3yCjZ4lclD5bvWrbXZ14BEd6Fh30BOoeBjgo3UqcqR0xV3s/wDb7Q2wIM8GZrU+9pl4s9HUfiAelWmz/wBttjaj9/Fma0J47wHjhPTeAxjqBVvbPphPmFU3SiyuVaIb1vMpkgB8QMTHDxN1KElce6V61Y3VqsEhhGWt5l34SdcwsfVzzaNtPMAHg1X3Z9xeQNYk7sme8tWbTcnUYMbdA4yh+XSrXZ4NxAbUgrKrF4N4YKzr4WjOeG/qhHXd6VMs/wDsKxkCYL20pyCPCeq+ywPUcP8AYqqzs5JlktyPTR+NeA8S4Gc50BHH4eVZGz2FLdQrLGAGQ6E6YTOGDe7g50Ov4Ctl3ILdhKuXnC7jSHGo04gaEjA8R/vnNVcQtMMVsrs0pSG4ncoUOdx11IOcrunkDqCfPyrJvdtK5itYfFIckIvicjTeY8+XibSrzY3Z+4v271iUiJz3jcW/7Y9r4nSuh7E2FDbJuRJgn1mOrsR7zf6cK41V3luIs0jYHZV4rlfpcJkXCsCuXjDE4w+mrA40OnHyrpIFKVzUpSlApSlApSlApSlApSlApSlApSlApSlArAduNhm5tzuD00R7yI894ez8x+eKz9KDi+xL+NJiJR+y3oME68kkOgbywTx6GsfavLs28aJ9TE26c+rJC2cHHQqTn+LnWzfpD7PiKdmxiC6OvRJ+OfLPH5t0rA7Q3ruz3yCbvZ4CSj2pbUnRvMqR+XnXp4dcdcpwlzrjsx+1Lc2F2rQE9zJ6e1b7GfFH8UbTHwq77SIEmh2lbndiuX3tNBFdrqy/ZDeuM/aqKwUXVq1k7BZIwbi0djgBgPEhJ9l1GPiFq52FDLc2EkO6qRyABmlzgMjgq8YBBDrqvQ4Hma1M21j8wWuttp2qtdR3EZ7sXJYyIo8UV2mA4A9kNo4PXIrP3Oz1Fw9zOqDvNx+7XVjMF3WkPJC+BkfZzpmoZNoRRKEiQM44yEZbOADqeuB56DNXGwezlxekSElIScl2HrD/AKY9r48PjwrjVW1FK2a7aRhb28XrElY4xzPE/wCpJ+JrbezfYBVImuyJH4iPjGv3vfP5fHjWxbE2DBapuQpgn1mOrsftH/Th5Vk65zLTwDHCvaUqBSlKBSlKBSlKBSlKBSlKBSlKBSlKBSlKBSlKBSlKDHdoNkJcwPA+m8PCfdcaqfkfyyK48Z5rWdZwgM0LGG4QnCyRnQqSRzHA9QDXcq5z+lzYOi30Y6JMPyVj+O781rUSNY2HJbxRMTGG3mYiIksqhyTuFiBvqM44AeXOvWuJbhxFGhLN6saD+3ADrwFW/ZLZbXU6w74jVgfERknGDhRzbGeOmh48K7DsHYENqm5CuCfWc6ux+03+gwOgFWapSIa52Y/R+iYlu8SPxEY1jX73vn8vjxrdgMaClKwpSlKBSlKBSlKBSlKBSlKBSlKBSlKBSlKBSlKBSlKBSlKBSlKBUN5apLG8UihkdSrA81IwaUoNS2R2Ha3mTckDwowdd/PeKB7Jx6/k2nmOu50pQKUpQKUpQKUpQKUpQKUpQKUpQKUpQf/Z"class="card-img-top"alt="">
+  <div class="card-body">
+    <h5 class="card-title">Solar Water Heater</h5>
+    <div class="card-text">Solar water heating is heating water by sunlight, using a solar thermal collector. A variety of configurations are available at varying cost to provide solutions in different climates and latitudes. SWHs are widely used for residential and some industrial applications</div>
+  </div>
+  <a href="" type="button" class=" btn btn-success">Learn More</a>
+</div>
+</div>
+
+</div>
+    </section>
+
+
+  <!---------------------------------------------pricing-------------------------------------------------->
+
+  <section id="Pricing">
+    <div class="container text-center">
+      <div class="display-5">
+        <h1>PRODUCT COST</h1>
+      </div> <br>
+      <div class="row">
+
+        <!--------------DIV 1 ------------->
+
+        <div class="col">
+          <div class="card">
+            <!-------Header------>
+            <div class="card-header">
+              <h3>Solar <span class="text-muted"> Roof Top</span></h3>
+            </div>
+            <!-------Body------>
+            <div class="card-body">
+              <ul class="list-unstyled">
+                <li>10 KW - aprox. Rs. 1,20,000/-</li>
+                <li>50 KW - Rs. 25,50,000/-</li>
+                <li>100 to 120 KW - Rs. 50,00,000/-</li>
+                <li>100 to 200 KW - Rs. 75,00,000/-</li>
+              </ul>
+             
+              <a class="btn btn-success px-5" href="#contact">Contact us  </a>
+            </div>
+          </div>
+        </div>
+        <!--------------DIV 2 ------------->
+
+
+        <div class="col">
+          <div class="card">
+            <!-------Header------>
+            <div class="card-header">
+              <h3>Solar <span class="text-muted"> MW Price</span></h3>
+            </div>
+            <!-------Body------>
+            <div class="card-body">
+              <ul class="list-unstyled">
+                <li>1MW - Rs. 4-5 Lakhs/-</li>
+                <li>2MW - Rs. 11-12 Lakhs/-</li>
+                <li>3MW - Rs. 17-18 Lakhs/</li>
+                <li>4MW - Rs. 20-22 Lakhs/</li>
+              </ul>
+              <BUtton class="btn btn-success px-5"> Contact </BUtton>
+            </div>
+          </div>
+        </div>
+        <!--------------DIV 3 ------------->
+
+        <div class="col">
+          <div class="card">
+            <!-------Header------>
+            <div class="card-header">
+              <h3>Solar <span class="text-muted">Street Light</span></h3>
+            </div>
+            <!-------Body------>
+            <div class="card-body">
+              <ul class="list-unstyled">
+                <li>12W - Rs. 20,000/-</li>
+                <li>24W - Rs. 35,000/-</li>
+                <li>30W - Rs. 50,000/-</li>
+                <li>40W - Rs. 66,000/-</li>
+              </ul>
+              <BUtton class="btn btn-success px-5"> Contact </BUtton>
+            </div>
+          </div>
+        </div>
+        <!--------------DIV 4 ------------->
+        <div class="row">
+          <div class="col">
+            <div class="card">
+              <!-------Header------>
+              <div class="card-header">
+                <h3>Solar <span class="text-muted"> Water Pump</span></h3>
+              </div>
+              <!-------Body------>
+              <div class="card-body">
+                <ul class="list-unstyled">
+                  <li>1 HP - Rs. 1.20,000/-</li>
+                  <li>3 HP - Rs. 2,70,000/-</li>
+                  <li>5 HP - Rs. 5.20,000/-</li>
+                  <li>7 HP - Rs. 7,10,000/-</li>
+                </ul>
+                <BUtton class="btn btn-success px-5"> Contact </BUtton>
+              </div>
+            </div>
+          </div>
+          <!--------------DIV 5 ------------->
+
+          <div class="col">
+            <div class="card">
+              <!-------Header------>
+              <div class="card-header">
+                <h3>Solar <span class="text-muted"> Homelight Systems</span></h3>
+              </div>
+              <!-------Body------>
+              <div class="card-body">
+                <ul class="list-unstyled">
+                  <li>100 UPS - Rs. 34,000/-</li>
+                  <li>200 UPS - Rs. 55,000/-</li>
+                  <li>300 UPS - Rs. 70,000/-</li>
+                  <li>500 UPS- Rs. 1,10,000/-</li>
+                </ul>
+                <BUtton class="btn btn-success px-5"> Contact </BUtton>
+              </div>
+            </div>
+          </div>
+
+          <!--------------DIV 6 ------------->
+
+          <div class="col">
+            <div class="card">
+              <!-------Header------>
+              <div class="card-header">
+                <h3>Solar <span class="text-muted"> Water Heater</span></h3>
+              </div>
+              <!-------Body------>
+              <div class="card-body">
+                <ul class="list-unstyled">
+                  <li>100 LPD - Rs. 20,000/-</li>
+                  <li>200 LPD - Rs. 35,000/-</li>
+                  <li>300 LPD - Rs. 50,000/-</li>
+                  <li>500 LPD - Rs. 66,000/-</li>
+                </ul>
+                <BUtton class="btn btn-success px-5"> Contact </BUtton>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-------------------------------------CONTACT US------------------------------------------------------->
+
+
+
+  <section id="contact">
+    <div class="container mb-5">
+      <div class="row">
+        <div class="col col-lg-7 col-12">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d107247.10532548241!2d76.91628698364474!3d10.910200832197448!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba85abc9241f6c1%3A0x121ee3378ea25efc!2sMalumichampatti%2C%20Tamil%20Nadu!5e1!3m2!1sen!2sin!4v1683781321364!5m2!1sen!2sin"
+            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </div>
+        <div class="col col-lg-5 col-12">
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label"> <b>Name</b></label>
+              <input type="text" class="form-control">
+
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label"> <b>Contact Number</b></label>
+              <input type="text" class="form-control">
+
+            </div>
+
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label"><b>Location</b></label>
+              <input type="text" class="form-control">
+
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label"> <b>EB Number</b> </label>
+                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">We'll never share your EB NUmber with anyone else.</div>
+              </div>
+
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label"> <b>Product Searching for </b> </label>
+                <input type="text" class="form-control">
+              </div>
+
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label"> <b>Enter your Message </b> </label>
+                <textarea type="text" class="form-control" rows="2"></textarea>
+
+              </div>
+
+              <button type="submit" class="btn btn-success"> <b> Submit</b> </button>
+          </form>
+
+        </div> <!----ROW-->
+      </div> <!----CONTAINER-->
+    </div> <!----CONTACT-->
+  </section>
+
+
+  <!-------------------------------------ENQUIRE ------------------------------------------------------->
+
+
+  <section id="enquire">
+    <div class="container">
+      <div class="row">
+        <div class="col1 col-lg-6 col-12">
+
+          <div class="card">
+            <img
+              src="https://static.vecteezy.com/system/resources/previews/004/603/411/original/care-solar-logo-template-creative-solar-panel-energy-logo-design-concepts-vector.jpg">
+              <h3 class="card-title"> TODAY RESOURCES FOR A BRIGHTER TOMORROW!</h3><BR>     
+            <div class="card-body">
+              <p>Solar energy is bound to be in our future. There's a kind of inevitability about it." " Even if we didn't have greenhouse gases, were going to have to move away from fossil fuels, as we're going to run out. They're finite, whereas solar and wind are infinite</p> <br>
+              <a href="#" class="btn btn-primary"> <b> Enquire Now</b> <br> For More Details </a>
+            </div>
+          </div>
+        </div>
+
+
+        
+        <div class="col2 col-lg-6 col-12">
+          <h2 style="color: darkgreen;">  Get In Touch </h2>
+          <br>
+          <div class="facebook">
+            <a href="https://www.facebook.com/people/MAS-Solar-Systems/100090865549338/" title="facebook"><i class="fa-brands fa-facebook"></i> Facebook   </a> <p>Connect with Facebook for More Details</p>
+            
+          
+
+          <div class="instagram">
+                <a href="https://www.instagram.com/mas.solarsystem/?igshid=YmMyMTA2M2Y%3D" title="instagram"><i class="fa-brands fa-instagram"></i> Instagram</a> </div><p>Connect with Instagram for Daily Update Project Details </p>
+            
+          </div>
+
+          <div class="youtube">
+            <a href="https://www.youtube.com/channel/UCEFAddakoc_pVEBbow6anLg" title="youtube"><i class="fa-brands fa-youtube"></i> Youtube</a>  </div><p>Connect with IYoutube for our Previous Project, Customer reviews & Feedback </p>
+         
+
+        </div> <!-------COL  -->
+      </div> <!--Row----->
+    </div> <!--container----->
+  </section>
+
+
+
+   <!-------------------------------------ENQUIRE ------------------------------------------------------->
+
+
+   <nav class="navbar navbar">
+    <div class="container-fluid">
+      <a class="navbar-brand ms-auto" href="#">
+       <P style="color: black;">    © 2023, Solar Energy. All right reserved.</P> 
+      </a>
+    </div>
+  </nav>
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+ 
+
+
+
+</body>
+
+</html>
